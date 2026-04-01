@@ -10,12 +10,14 @@ const Navbar = () => {
     <nav className="bg-[#F2F2F2] shadow ">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-3">
-          {/* Left side brand/title */}
+          {/* left side brand/title */}
           <div className=" font-bold flex gap-2 items-center">
-            <span>DigiTools</span>
+            <span className="bg-linear-to-r from-purple-400 to-purple-900 bg-clip-text text-transparent line-clamp-1">
+              DigiTools
+            </span>
           </div>
 
-          {/* Right side menu, sign-in button & logo */}
+          {/* right side menu, sign-in button & logo */}
           <ul className="hidden md:flex items-center text-[15px] gap-4 font-semibold">
             <li>
               <a href="#">Products</a>
@@ -38,12 +40,12 @@ const Navbar = () => {
 
             <button>Log In</button>
 
-            <button className="px-4 py-2 bg-[#4D2C5E] text-white rounded-full">
+            <button className="px-4 py-2 bg-linear-to-r from-purple-400 to-purple-900 text-white rounded-full">
               Get Started
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-md"
             onClick={() => setIsOpen(!isOpen)}
@@ -52,7 +54,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* mobile Menu */}
         {isOpen && (
           <ul className="md:hidden flex flex-col justify-center items-center gap-2 pb-4 font-semibold">
             <li>
@@ -73,7 +75,7 @@ const Navbar = () => {
             <CiShoppingCart />
             <button>Log In</button>
 
-            <button className="px-4 py-2 bg-[#4D2C5E] text-white rounded-full">
+            <button className="px-4 py-2 bg-linear-to-r from-purple-400 to-purple-900 text-white rounded-full">
               Get Started
             </button>
           </ul>
