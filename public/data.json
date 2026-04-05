@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "title": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "duration": "Mo",
+    "badge": "Bestseller",
+    "image": "https://i.ibb.co.com/dwSVFDLG/design-tool.png",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Design Master",
+    "description": "Create stunning graphics, logos, and social media posts easily.",
+    "price": 19,
+    "duration": "Mo",
+    "badge": "Popular",
+    "image": "https://i.ibb.co.com/dwFJYyvV/operation.png",
+    "features": [
+      "100+ design templates",
+      "Drag & drop editor",
+      "High resolution export"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "SEO Booster",
+    "description": "Optimize your website and rank higher on search engines.",
+    "price": 25,
+    "duration": "Mo",
+    "badge": "New",
+    "image": "https://i.ibb.co.com/GvsCQhWN/portfolio.png",
+    "features": [
+      "Keyword research",
+      "On-page SEO analysis",
+      "Competitor tracking"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Video Editor Pro",
+    "description": "Edit and produce professional videos with ease.",
+    "price": 35,
+    "duration": "Mo",
+    "badge": "New",
+    "image": "https://i.ibb.co.com/gF9r9gj4/shopping-cart.png",
+    "features": [
+      "4K video support",
+      "Transitions & effects",
+      "Audio editing tools"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Social Media Manager",
+    "description": "Manage and schedule all your social media posts in one place.",
+    "price": 15,
+    "duration": "Mo",
+    "badge": "Popular",
+    "image": "https://i.ibb.co.com/DDJ5cR2M/social-media.png",
+    "features": [
+      "Auto scheduling",
+      "Analytics dashboard",
+      "Multi-platform support"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Email Marketing Pro",
+    "description": "Create and send high-converting email campaigns.",
+    "price": 22,
+    "duration": "Mo",
+    "badge": "Bestseller",
+    "image": "https://i.ibb.co.com/zWQ5qR19/writing-2327400-1.png",
+    "features": [
+      "Email templates",
+      "Automation workflows",
+      "Subscriber management"
+    ]
+  }
+ 
+]
+
