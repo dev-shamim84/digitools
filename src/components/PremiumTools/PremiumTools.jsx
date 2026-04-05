@@ -6,7 +6,7 @@ const toolPromise = async () => {
   return res;
 };
 const resolvePromise = toolPromise();
-const PremiumTools = () => {
+const PremiumTools = ({ cart, setCart }) => {
   const [active, setActive] = useState("products");
   return (
     <section>
@@ -23,7 +23,7 @@ const PremiumTools = () => {
               onClick={() => setActive("products")}
               type="radio"
               name="my_tabs_1"
-              className="tab px-4 "
+              className="tab px-4 w-40 rounded"
               aria-label="Products"
               defaultChecked
             />
@@ -31,8 +31,8 @@ const PremiumTools = () => {
               onClick={() => setActive("cart")}
               type="radio"
               name="my_tabs_1"
-              className="tab px-4 rounded"
-              aria-label="Cart"
+              className="tab px-4 rounded w-40"
+              aria-label={`Cart (${cart.length})`}
             />
           </div>
         </div>
@@ -43,10 +43,14 @@ const PremiumTools = () => {
             <span className="loading loading-ring loading-xl flex flex-col justify-center items-center"></span>
           }
         >
-          <AllTolls resolvePromise={resolvePromise} />
+          <AllTolls
+            resolvePromise={resolvePromise}
+            cart={cart}
+            setCart={setCart}
+          />
         </Suspense>
       )}
-      {active === "cart" && <Cart />}
+      {active === "cart" && <Cart cart={cart} />}
     </section>
   );
 };

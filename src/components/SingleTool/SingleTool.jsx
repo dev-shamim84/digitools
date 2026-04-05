@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa";
-const SingleTool = ({ tool }) => {
-  const [add, setAdd] = useState(false);
+import { toast } from "react-toastify";
+const SingleTool = ({ tool, cart, setCart }) => {
   const { title, description, price, duration, badge, image, features } = tool;
+  const [add, setAdd] = useState(false);
+  const handleAddBuy = ({ item }) => {
+    setAdd(true);
+    const newCart = [...cart, item];
+    setCart(newCart);
+    console.log(newCart);
+    toast.success("cart added");
+  };
   return (
     <div className="card bg-base-100 shadow-sm flex flex-col">
       <div className="card-body">
@@ -40,7 +48,7 @@ const SingleTool = ({ tool }) => {
         </div>
         <div className="mt-6">
           <button
-            onClick={() => setAdd(true)}
+            onClick={() => handleAddBuy(tool)}
             className="btn bg-linear-to-r from-purple-900 to-purple-500 w-full text-white rounded"
           >
             {add ? "Added To Cart" : "By Now"}
