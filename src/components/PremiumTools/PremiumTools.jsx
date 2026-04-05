@@ -12,7 +12,7 @@ const PremiumTools = ({ cart, setCart }) => {
     <section>
       <div className="container mx-auto px-4">
         <div className="flex flex-col justify-center items-center space-y-4 py-5">
-          <h2 className="text-4xl font-bold">PremiumDigitalTool</h2>
+          <h2 className="text-4xl font-extrabold">PremiumDigitalTool</h2>
           <p className="text-center text-neutral-500">
             Choose from our curated collection of premium digital products
             designed <br />

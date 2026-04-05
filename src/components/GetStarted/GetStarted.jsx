@@ -6,7 +6,7 @@ const GetStarted = () => {
     <section className="bg-[#e8f0f8ef] py-5">
       <div className="container mx-auto px-4">
         <div className="flex flex-col justify-center items-center py-5">
-          <h2 className="text-4xl font-bold">Get Started in 3 Steps</h2>
+          <h2 className="text-4xl font-extrabold">Get Started in 3 Steps</h2>
           <p className="text-center text-neutral-500">
             Start using premium digital tools in minutes, not hours..
           </p>

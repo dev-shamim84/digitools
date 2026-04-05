@@ -5,6 +5,7 @@ import PremiumTool from "./components/PremiumTools/PremiumTools";
 import Rating from "./components/Rating/Rating";
 import GetStarted from "./components/GetStarted/GetStarted";
 import Pricing from "./components/Pricing/Pricing";
+import WorkFollow from "./components/WorkFllow/WorkFollow";
 
 const pricePromise = async () => {
   const res = fetch("/price.json").then((res) => res.json());
@@ -28,6 +29,7 @@ const App = () => {
       >
         <Pricing resolvePricePromise={resolvePricePromise} />
       </Suspense>
+      <WorkFollow />
     </div>
   );
 };

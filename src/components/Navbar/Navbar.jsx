@@ -5,19 +5,15 @@ import { IoClose } from "react-icons/io5";
 
 const Navbar = ({ cart }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="bg-[#F2F2F2] shadow sticky top-0  z-50 ">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-3">
-          {/* left side brand/title */}
           <div className=" font-bold flex gap-2 items-center">
-            <span className=" font-bold text-2xl bg-linear-to-l from-purple-500 to-purple-900 bg-clip-text text-transparent line-clamp-1">
+            <span className=" font-extrabold text-2xl bg-linear-to-l from-purple-500 to-purple-900 bg-clip-text text-transparent line-clamp-1">
               DigiTools
             </span>
           </div>
-
-          {/* right side menu, sign-in button & logo */}
           <ul className="hidden md:flex items-center text-[15px] gap-4 font-semibold">
             <li>
               <a href="#">Products</a>
@@ -48,8 +44,6 @@ const Navbar = ({ cart }) => {
               Get Started
             </button>
           </div>
-
-          {/* mobile Menu Button */}
           <button
             className="md:hidden p-2 rounded-md"
             onClick={() => setIsOpen(!isOpen)}
@@ -57,8 +51,6 @@ const Navbar = ({ cart }) => {
             {isOpen ? <IoClose size={25} /> : <IoMdMenu size={25} />}
           </button>
         </div>
-
-        {/* mobile Menu */}
         {isOpen && (
           <ul className="md:hidden flex flex-col justify-center items-center gap-2 pb-4 font-semibold">
             <li>

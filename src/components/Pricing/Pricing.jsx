@@ -7,7 +7,7 @@ const Pricing = ({ resolvePricePromise }) => {
     <section className="py-4">
       <div className="container mx-auto px-4">
         <div className="space-y-3">
-          <h2 className="text-4xl font-bold text-center">
+          <h2 className="text-4xl font-extrabold text-center">
             Simple, Transparent Pricing
           </h2>
           <p className="text-center text-neutral-500">
