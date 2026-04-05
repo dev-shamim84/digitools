@@ -4,9 +4,9 @@ import { toast } from "react-toastify";
 const SingleTool = ({ tool, cart, setCart }) => {
   const { title, description, price, duration, badge, image, features } = tool;
   const [add, setAdd] = useState(false);
-  const handleAddBuy = ({ item }) => {
+  const handleAddBuy = () => {
     setAdd(true);
-    const newCart = [...cart, item];
+    const newCart = [...cart, tool];
     setCart(newCart);
     console.log(newCart);
     toast.success("cart added");
@@ -48,7 +48,7 @@ const SingleTool = ({ tool, cart, setCart }) => {
         </div>
         <div className="mt-6">
           <button
-            onClick={() => handleAddBuy(tool)}
+            onClick={handleAddBuy}
             className="btn bg-linear-to-r from-purple-900 to-purple-500 w-full text-white rounded"
           >
             {add ? "Added To Cart" : "By Now"}

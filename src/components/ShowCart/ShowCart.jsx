@@ -1,13 +1,21 @@
-const ShowCart = ({ cartItem }) => {
-  const { tittle, price } = cartItem;
+const ShowCart = ({ cartItem, cart, setCart }) => {
+  const removeCart = () => {
+    console.log("delete cart");
+    const remove = cart.filter((removeItem) => removeItem.id !== cartItem.id);
+
+    setCart(remove);
+  };
+  const { title, price } = cartItem;
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center bg-white py-4 shadow rounded gap-4">
       <div>
-        <h2 className="font-bold bg-white shadow">{tittle}</h2>
-        <p className="font-semibold text-neutral-400">{price}</p>
+        <h2 className="font-bold bg-white shadow">{title}</h2>
+        <p className="font-semibold text-neutral-400">${price}</p>
       </div>
       <div>
-        <button className="btn btn-error">Remove</button>
+        <button onClick={removeCart} className="btn btn-error text-white">
+          Remove
+        </button>
       </div>
     </div>
   );

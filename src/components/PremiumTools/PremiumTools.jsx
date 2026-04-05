@@ -50,7 +50,7 @@ const PremiumTools = ({ cart, setCart }) => {
           />
         </Suspense>
       )}
-      {active === "cart" && <Cart cart={cart} />}
+      {active === "cart" && <Cart cart={cart} setCart={setCart} />}
     </section>
   );
 };
