@@ -1,8 +1,6 @@
 const ShowCart = ({ cartItem, cart, setCart }) => {
   const removeCart = () => {
-    console.log("delete cart");
     const remove = cart.filter((removeItem) => removeItem.id !== cartItem.id);
-
     setCart(remove);
   };
   const { title, price } = cartItem;

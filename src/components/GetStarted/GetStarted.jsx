@@ -3,7 +3,7 @@ import rocketImg from "../../assets/rocket.png";
 import packageImg from "../../assets/package.png";
 const GetStarted = () => {
   return (
-    <section className="bg-[#e8f0f8ef]">
+    <section className="bg-[#e8f0f8ef] py-5">
       <div className="container mx-auto px-4">
         <div className="flex flex-col justify-center items-center py-5">
           <h2 className="text-4xl font-bold">Get Started in 3 Steps</h2>
@@ -57,7 +57,7 @@ const GetStarted = () => {
           <div className="bg-white p-5">
             <div className="flex justify-end">
               <span className=" flex justify-center items-center  bg-purple-600 text-white rounded-full h-10 w-10 ">
-                01
+                03
               </span>
             </div>
             <div className="flex flex-col justify-center items-center">

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Starter",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "duration": "Month",
+    "badge": "",
+    "buttonText": "Get Started Free",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker",
+      "1 project per month"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Pro",
+    "description": "Create stunning graphics, logos, and social media posts easily.",
+    "price": 19,
+    "duration": "Month",
+    "badge": "Most Popular",
+    "buttonText": "Start Pro Trial",
+    "features": [
+      "Access to all premium tools",
+      "Unlimited templates ",
+      "Priority support ",
+      "Unlimited projects",
+      "Cloud sync",
+      "Advanced analytics"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Enterprise",
+    "description": "Optimize your website and rank higher on search engines.",
+    "price": 25,
+    "duration": "Month",
+    "badge": "",
+    "buttonText": "Contact Sales",
+    "features": [
+      "Everything in Pro",
+      "OTeam collaboration",
+      "Custom integrations",
+      "SLA guarantee",
+      "Custom branding"
+    ]
+  }
+]

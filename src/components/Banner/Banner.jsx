@@ -5,9 +5,9 @@ const Banner = () => {
   return (
     <section>
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-12 gap-4 items-center gao-4 my-10">
+        <div className="grid grid-cols-12 gap-4 items-center gap-4 my-10">
           <div className="col-span-12 lg:col-span-6 space-y-3 mx-auto md:mx-0">
-            <div className="badge bg-white py-2">
+            <div className="badge bg-gray-300 py-2">
               <img src={reactAngle} alt="reactAngle.png" />
               <span className="text-purple-500 text-xl font-semibold">
                 New: AI-Powered Tools Available
@@ -34,7 +34,7 @@ const Banner = () => {
           </div>
           <div className="col-span-12 lg:col-span-6">
             <img
-              className="max-w-full mx-auto md:mx-0"
+              className="w-[500px] mx-auto md:mx-0"
               src={bannerImg}
               alt="bannerImg"
             />

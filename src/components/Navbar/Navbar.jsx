@@ -7,7 +7,7 @@ const Navbar = ({ cart }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#F2F2F2] shadow-xl fixed top-0 left-0 w-full z-50 ">
+    <nav className="bg-[#F2F2F2] shadow sticky top-0  z-50 ">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-3">
           {/* left side brand/title */}
@@ -54,7 +54,7 @@ const Navbar = ({ cart }) => {
             className="md:hidden p-2 rounded-md"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <IoClose /> : <IoMdMenu />}
+            {isOpen ? <IoClose size={25} /> : <IoMdMenu size={25} />}
           </button>
         </div>
 

@@ -38,7 +38,7 @@ const SingleTool = ({ tool, cart, setCart }) => {
           <div className="space-y-2">
             {features.map((item, index) => (
               <li
-                className=" flex gap-1 items-center list-none font-semibold text-neutral-400"
+                className=" flex gap-1 items-center list-none font-semibold text-neutral-400 text-[15px]"
                 key={index}
               >
                 <FaCheck className="text-green-500" /> {item}
