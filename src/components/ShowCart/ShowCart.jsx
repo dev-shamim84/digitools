@@ -6,12 +6,17 @@ const ShowCart = ({ cartItem, cart, setCart }) => {
     setCart(remove);
     toast.success("cart item remove successfully");
   };
-  const { title, price } = cartItem;
+  const { title, price, image } = cartItem;
   return (
     <div className="flex justify-between items-center bg-white py-4 shadow rounded gap-4">
-      <div>
-        <h2 className="font-bold bg-white shadow">{title}</h2>
-        <p className="font-semibold text-neutral-400">${price}</p>
+      <div className="flex items-center gap-3">
+        <div>
+          <img src={image} alt="image.png" />
+        </div>
+        <div>
+          <h2 className="font-bold bg-white shadow">{title}</h2>
+          <p className="font-semibold text-neutral-400">${price}</p>
+        </div>
       </div>
       <div>
         <button onClick={removeCart} className="btn btn-error text-white">
