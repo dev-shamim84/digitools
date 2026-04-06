@@ -23,7 +23,11 @@ const PremiumTools = ({ cart, setCart }) => {
               onClick={() => setActive("products")}
               type="radio"
               name="my_tabs_1"
-              className="tab px-4 w-40 rounded"
+              className={`tab px-4 w-40 rounded font-bold ${
+                active === "products"
+                  ? "bg-linear-to-r from-purple-800 to-purple-600 text-white"
+                  : ""
+              }`}
               aria-label="Products"
               defaultChecked
             />
@@ -31,7 +35,11 @@ const PremiumTools = ({ cart, setCart }) => {
               onClick={() => setActive("cart")}
               type="radio"
               name="my_tabs_1"
-              className="tab px-4 rounded w-40"
+              className={`tab px-4 rounded w-40 font-bold ${
+                active === "cart"
+                  ? "bg-linear-to-r from-purple-800 to-purple-600 text-white"
+                  : ""
+              }`}
               aria-label={`Cart (${cart.length})`}
             />
           </div>

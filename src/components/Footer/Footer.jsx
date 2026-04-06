@@ -98,8 +98,7 @@ const Footer = () => {
         <hr className="text-gray-500/90 my-3" />
         <div className="flex flex-col items-center md:flex-row md:justify-between">
           <p className="text-white">
-            &copy; {new Date().getUTCFullYear()}
-            Digitools. All rights reserved.
+            &copy; {new Date().getUTCFullYear()} Digitools. All rights reserved.
           </p>
           <div className="mt-2 md:mt-0 flex gap-5 text-white">
             <a href="#">Terms of Service</a>
