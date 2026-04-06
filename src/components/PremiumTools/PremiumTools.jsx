@@ -62,5 +62,4 @@ const PremiumTools = ({ cart, setCart }) => {
     </section>
   );
 };
-
 export default PremiumTools;

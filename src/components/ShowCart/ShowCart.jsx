@@ -1,7 +1,10 @@
+import { toast } from "react-toastify";
+
 const ShowCart = ({ cartItem, cart, setCart }) => {
   const removeCart = () => {
     const remove = cart.filter((removeItem) => removeItem.id !== cartItem.id);
     setCart(remove);
+    toast.success("cart item remove successfully");
   };
   const { title, price } = cartItem;
   return (
