@@ -22,7 +22,6 @@ const App = () => {
       <Rating />
       <PremiumTool cart={cart} setCart={setCart} />
       <GetStarted />
-
       <Suspense
         fallback={
           <span className="loading loading-ring loading-xl flex flex-col items-center justify-center"></span>
