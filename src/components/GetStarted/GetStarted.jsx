@@ -3,7 +3,7 @@ import rocketImg from "../../assets/rocket.png";
 import packageImg from "../../assets/package.png";
 const GetStarted = () => {
   return (
-    <section className="bg-[#e8f0f8ef] py-5">
+    <section className="py-5">
       <div className="container mx-auto px-4">
         <div className="flex flex-col justify-center items-center py-5">
           <h2 className="text-4xl font-extrabold">Get Started in 3 Steps</h2>
@@ -12,7 +12,7 @@ const GetStarted = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <div className="bg-white p-5">
+          <div className="bg-white p-5 shadow">
             <div className="flex justify-end">
               <span className=" flex justify-center items-center  bg-purple-600 text-white rounded-full h-10 w-10 ">
                 01
@@ -33,7 +33,7 @@ const GetStarted = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white p-5">
+          <div className="bg-white p-5 shadow">
             <div className="flex justify-end">
               <span className=" flex justify-center items-center  bg-purple-600 text-white rounded-full h-10 w-10 ">
                 02
@@ -54,7 +54,7 @@ const GetStarted = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white p-5">
+          <div className="bg-white p-5 shadow">
             <div className="flex justify-end">
               <span className=" flex justify-center items-center  bg-purple-600 text-white rounded-full h-10 w-10 ">
                 03
